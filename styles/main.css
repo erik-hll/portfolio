@@ -1,3 +1,4 @@
+@import url(font.css);
 @import url(header.css);
 @import url(hero.css);
 
@@ -6,4 +7,34 @@ body {
     color: white;
 
     margin: 0 auto;
+}
+
+a {
+    all: unset;
+}
+
+.background {
+    position: fixed;
+    /* se queda al fondo aunque haya scroll */
+    inset: 0;
+    z-index: -1;
+    /* detrás del contenido */
+
+    background-color: rgb(10, 10, 10);
+
+    /* Cuadrícula */
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+
+    /* Desvanecimiento solo en la cuadrícula */
+    mask-image: linear-gradient(to bottom,
+            black 50%,
+            /* cuadrícula 100% visible arriba */
+            transparent 100%
+            /* cuadrícula desaparece abajo */
+        );
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
 }
