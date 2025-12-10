@@ -16,7 +16,7 @@ header nav {
     transition: .5s;
 
     &:hover {
-        color: hsl(0, 0%, 75%);
+        color: lightskyblue;
         cursor: pointer;
     }
 }
@@ -25,7 +25,7 @@ header nav {
     transition: .5s;
 
     &:hover {
-        color: hsl(0, 0%, 75%);
+        color: lightskyblue;
         cursor: pointer;
     }
 }

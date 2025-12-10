@@ -1,0 +1,22 @@
+.hero {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.hero {
+    padding: 32px;
+}
+
+.hero h1 {
+    font-size: 72px;
+}
+
+.hero p {
+    font-size: 36px;
+}
+
+.hero p span {
+    color: lightskyblue;
+    font-style: italic;
+}
