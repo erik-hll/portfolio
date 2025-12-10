@@ -1,6 +1,7 @@
 @import url(font.css);
 @import url(header.css);
 @import url(hero.css);
+@import url(about-me.css);
 
 body {
     background-color: rgb(10, 10, 10);
@@ -37,4 +38,8 @@ a {
         );
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
+}
+
+.separator {
+    margin-block: 1000px;
 }

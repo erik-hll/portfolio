@@ -1,7 +1,10 @@
 .hero {
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    height: 80vh;
 }
 
 .hero {
@@ -19,4 +22,62 @@
 .hero p span {
     color: lightskyblue;
     font-style: italic;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-img img {
+    width: 160px;
+}
+
+.availability {
+    background-color: rgb(20, 20, 20);
+    width: 200px;
+    padding: 16px;
+    position: relative;
+    margin: 16px;
+    border-radius: 4px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.availability::after,
+.availability::before {
+    border-radius: 4px;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, rgb(0, 255, 0));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 4px;
+    animation: 3s spin linear infinite;
+}
+
+.availability::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
 }

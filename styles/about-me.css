@@ -1,0 +1,16 @@
+.about-me {
+    text-align: center;
+}
+
+.about-me h1 {
+    font-size: 54px;
+}
+
+.about-me p {
+    font-size: 18px;
+    background-color: rgb(20, 20, 20);
+
+    padding: 32px;
+    border-radius: 8px;
+    text-align: left;
+}
